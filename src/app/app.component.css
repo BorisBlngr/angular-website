@@ -1,0 +1,40 @@
+/* Nav bar : Toolbar */
+.itemMenuToolbar {
+  margin-right: 1em;
+}
+
+.icon {
+  padding: 0 14px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+/* Side bar */
+.sidenav-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.sidenav-container md-sidenav {
+  width: 250px;
+}
+
+.sidenav-container .mat-sidenav-content,
+.sidenav-container md-sidenav {
+  display: flex;
+  overflow: visible;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.scrolling-content {
+  overflow: auto;
+}
+
+/* Fab button */
+.fab {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}

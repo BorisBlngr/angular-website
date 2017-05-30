@@ -1,3 +1,36 @@
-<h1>
-  {{title}}
-</h1>
+<md-sidenav-container class="sidenav-container">
+  <!-- Nav Bar : Toolbar -->
+  <md-toolbar color="warn">
+    <div class="itemMenuToolbar" *ngFor="let link1 of menuItem">
+    <span *ngIf="link1.links.length > 0; else elseBlock">
+      <a [mdMenuTriggerFor]=menu> {{link1.name}} </a>
+      <md-menu #menu="mdMenu">
+        <button *ngFor="let link2 of link1.links" md-menu-item>
+          <md-icon>chevron_right</md-icon>
+          <span>{{link2.name}}</span>
+        </button>
+      </md-menu>
+    </span>
+      <ng-template #elseBlock><a> {{link1.name}} </a></ng-template>
+    </div>
+  </md-toolbar>
+
+  <!-- Nav Bar : SideBar -->
+  <md-sidenav #sidenav mode="over" opened="false">
+    <div class="scrolling-content">
+      <md-list *ngFor="let link1 of menuItem">
+        <h3 md-subheader>{{link1.name}}</h3>
+        <md-list-item *ngFor="let link2 of link1.links">
+          <md-icon md-list-icon>chevron_right</md-icon>
+          <h4 md-line>{{link2.name}}</h4>
+        </md-list-item>
+        <md-divider></md-divider>
+      </md-list>
+    </div>
+  </md-sidenav>
+</md-sidenav-container>
+
+<!-- Button -->
+<button md-mini-fab class="fab" (click)="sidenav.toggle()">
+  <md-icon>add</md-icon>
+</button>
