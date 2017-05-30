@@ -3,7 +3,7 @@
   <md-toolbar color="warn">
     <div class="itemMenuToolbar" *ngFor="let link1 of menuItem">
     <span *ngIf="link1.links.length > 0; else elseBlock">
-      <a [mdMenuTriggerFor]=menu> {{link1.name}} </a>
+      <a  routerLink="/home" [mdMenuTriggerFor]=menu> {{link1.name}} </a>
       <md-menu #menu="mdMenu">
         <button *ngFor="let link2 of link1.links" md-menu-item>
           <md-icon>chevron_right</md-icon>
@@ -24,10 +24,13 @@
           <md-icon md-list-icon>chevron_right</md-icon>
           <h4 md-line>{{link2.name}}</h4>
         </md-list-item>
-        <md-divider></md-divider>
+        <md-divider *ngIf="last"></md-divider>
       </md-list>
     </div>
   </md-sidenav>
+
+  <router-outlet></router-outlet>
+
 </md-sidenav-container>
 
 <!-- Button -->
