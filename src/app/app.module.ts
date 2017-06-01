@@ -14,13 +14,18 @@ import {MdToolbarModule} from '@angular/material';
 import {MdMenuModule} from '@angular/material';
 import {MdCardModule} from '@angular/material';
 
+// Google Map
+import { AgmCoreModule } from 'angular2-google-maps/core';
+
 import {AppComponent} from './app.component';
-import { HomeComponent } from './components/home.component';
+import { HomeComponent } from './components/home/home.component';
+import { MapComponent } from './components/map/map.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +41,9 @@ import { HomeComponent } from './components/home.component';
     MdMenuModule,
     AppRoutingModule,
     MdCardModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyD7dcxkLORqvyzSZOnEHJz8QS5LG3zKQ_M'
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

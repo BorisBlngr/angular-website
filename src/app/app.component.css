@@ -37,10 +37,4 @@ md-toolbar {
   width: 100%;
 }
 
-/* Fab button */
-.fab {
-  position: absolute;
-  right: 20px;
-  bottom: 10px;
-}
 
