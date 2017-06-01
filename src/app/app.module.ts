@@ -17,15 +17,22 @@ import {MdCardModule} from '@angular/material';
 // Google Map
 import { AgmCoreModule } from 'angular2-google-maps/core';
 
+// Table
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+
 import {AppComponent} from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { MapComponent } from './components/map/map.component';
+import { TarifsComponent } from './components/tarifs/tarifs.component';
+import { HeaderBackgroundComponent } from './components/header-background/header-background.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    MapComponent
+    MapComponent,
+    TarifsComponent,
+    HeaderBackgroundComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +51,7 @@ import { MapComponent } from './components/map/map.component';
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyD7dcxkLORqvyzSZOnEHJz8QS5LG3zKQ_M'
     }),
+    NgxDatatableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

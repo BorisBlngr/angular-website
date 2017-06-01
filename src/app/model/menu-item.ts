@@ -1,90 +1,94 @@
 export class MenuItem {
   public static MENU_ITEM = [{
-    name: 'link1',
+    name: 'link1 à test',
     links: [
       {
-        name: 'link1-1',
+        name: 'home',
+        location: '/home',
       },
       {
-        name: 'link1-2',
+        name: 'tarif',
+        location: '/tarif',
       },
       {
         name: 'link1-3',
+        location: '/link1',
       }]
   }, {
     name: 'link2',
+    location: '/link1',
     links: [
       {
         name: 'link2-1',
+        location: '/link1',
       },
       {
         name: 'link2-2',
+        location: '/link1',
       },
       {
         name: 'link2-3',
+        location: '/link1',
+      }]
+  }, {
+    name: 'Home',
+    location: '/home',
+    links: []
+  }, {
+    name: 'Tarif',
+    location: '/tarif',
+    links: []
+  }, {
+    name: 'link2',
+    location: '/link1',
+    links: [
+      {
+        name: 'link2-1',
+        location: '/link1',
+      },
+      {
+        name: 'link2-2',
+        location: '/link1',
+      },
+      {
+        name: 'link2-3',
+        location: '/link1',
       }]
   }, {
     name: 'link2',
+    location: '/link1',
     links: [
       {
         name: 'link2-1',
+        location: '/link1',
       },
       {
         name: 'link2-2',
+        location: '/link1',
       },
       {
         name: 'link2-3',
+        location: '/link1',
       }]
   }, {
     name: 'link2',
+    location: '/link1',
     links: [
       {
         name: 'link2-1',
+        location: '/link1',
       },
       {
         name: 'link2-2',
+        location: '/link1',
       },
       {
         name: 'link2-3',
-      }]
-  }, {
-    name: 'link2',
-    links: [
-      {
-        name: 'link2-1',
-      },
-      {
-        name: 'link2-2',
-      },
-      {
-        name: 'link2-3',
-      }]
-  }, {
-    name: 'link2',
-    links: [
-      {
-        name: 'link2-1',
-      },
-      {
-        name: 'link2-2',
-      },
-      {
-        name: 'link2-3',
-      }]
-  }, {
-    name: 'link2',
-    links: [
-      {
-        name: 'link2-1',
-      },
-      {
-        name: 'link2-2',
-      },
-      {
-        name: 'link2-3',
+        location: '/link1',
       }]
   }, {
     name: 'link3',
+    location: '/link1',
     links: []
   }];
 }

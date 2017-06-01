@@ -1,17 +1,17 @@
 <md-sidenav-container class="sidenav-container">
   <!-- Nav Bar : Toolbar -->
-  <md-toolbar color="warn">
+  <md-toolbar color="primary">
     <div class="itemMenuToolbar" *ngFor="let link1 of menuItem">
     <span *ngIf="link1.links.length > 0; else elseBlock">
-      <a  routerLink="/home" [mdMenuTriggerFor]=menu> {{link1.name}} </a>
+      <a [mdMenuTriggerFor]=menu> {{link1.name}} </a>
       <md-menu #menu="mdMenu">
         <button *ngFor="let link2 of link1.links" md-menu-item>
           <md-icon>chevron_right</md-icon>
-          <span>{{link2.name}}</span>
+          <a [routerLink]="link2.location">{{link2.name}}</a>
         </button>
       </md-menu>
     </span>
-      <ng-template #elseBlock><a> {{link1.name}} </a></ng-template>
+      <ng-template #elseBlock><a [routerLink]="link1.location"> {{link1.name}} </a></ng-template>
     </div>
     <span class="spacer"></span>
     <button md-button class="fab" (click)="sidenav.toggle()">
@@ -34,6 +34,29 @@
   </md-sidenav>
 
   <router-outlet></router-outlet>
+
+  <md-card class="all footer">
+    <div class="footer-info margin">
+      <h3>Contact</h3>
+      <div>
+        <p>Adresse ici : ed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+        <p>Sur rendez-vous au 14649849849</p>
+        <p>Adresse mail</p>
+        <br>
+        <p>Parking accessible</p>
+        <br>
+        <a href=""><i class="fa fa-facebook-f" style="font-size:24px"> </i></a>
+        <a href=""><i class="fa fa-linkedin" style="font-size:24px"> </i></a>
+      </div>
+      <app-map class="margin"></app-map>
+    </div>
+  </md-card>
+
+  <md-card class="all footer">
+    <p> Le site provient d'un <a href="https://github.com/BorisBlngr/angular-website"> projet publique</a>. Les images
+      sont de <a href="">un site à venir</a>.</p>
+  </md-card>
+
 
 </md-sidenav-container>
 
