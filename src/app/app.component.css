@@ -8,7 +8,7 @@ a {
 
 /* Nav bar : Toolbar */
 md-toolbar {
-  width: 100vw;
+  width: 100vw !important;
   background: hsl(0, 0%, 10%) !important;
 }
 
@@ -68,6 +68,13 @@ md-toolbar a {
   margin: 7px;
   font-size: 24px;
   color: hsl(0, 0%, 70%);;
+}
+
+/* For Mobile Phones */
+@media screen and (max-width: 633px) {
+  .itemMenuToolbar {
+    display: none;
+  }
 }
 
 
