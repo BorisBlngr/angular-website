@@ -25,6 +25,7 @@ import { HomeComponent } from './components/home/home.component';
 import { MapComponent } from './components/map/map.component';
 import { TarifsComponent } from './components/tarifs/tarifs.component';
 import { HeaderBackgroundComponent } from './components/header-background/header-background.component';
+import { PresentationComponent } from './components/presentation/presentation.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { HeaderBackgroundComponent } from './components/header-background/header
     HomeComponent,
     MapComponent,
     TarifsComponent,
-    HeaderBackgroundComponent
+    HeaderBackgroundComponent,
+    PresentationComponent
   ],
   imports: [
     BrowserModule,
