@@ -20,11 +20,6 @@
   justify-content: center;
 }
 
-.card-header-image {
-  background-image: url('../../../assets/images/test.jpg');
-  background-size: cover;
-}
-
 .header {
   position: relative;
   width: 100%;
