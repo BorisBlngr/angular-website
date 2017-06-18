@@ -26,6 +26,7 @@ import { MapComponent } from './components/map/map.component';
 import { TarifsComponent } from './components/tarifs/tarifs.component';
 import { HeaderBackgroundComponent } from './components/header-background/header-background.component';
 import { PresentationComponent } from './components/presentation/presentation.component';
+import { FooterBackgroundComponent } from './components/footer-background/footer-background.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { PresentationComponent } from './components/presentation/presentation.co
     MapComponent,
     TarifsComponent,
     HeaderBackgroundComponent,
-    PresentationComponent
+    PresentationComponent,
+    FooterBackgroundComponent
   ],
   imports: [
     BrowserModule,

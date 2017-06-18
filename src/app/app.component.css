@@ -70,12 +70,33 @@ md-toolbar a {
   color: hsl(0, 0%, 70%);;
 }
 
+@media screen and (min-width: 633px) {
+  .itemMenuToolbar {
+    display: inline-block;
+  }
+
+  .fab {
+    display: none !important;
+  }
+
+  /*for parallax effect*/
+  .mat-sidenav-container {
+    display: initial;
+  }
+}
+
 /* For Mobile Phones */
 @media screen and (max-width: 633px) {
   .itemMenuToolbar {
     display: none;
   }
+
+  .fab {
+    display: inline-block;
+  }
 }
+
+
 
 
 

@@ -1,0 +1,19 @@
+.header {
+}
+
+.header-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('../../../assets/images/home-background.png');
+  height: 250px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-title {
+  color: whitesmoke;
+  position: absolute;
+  text-align: center;
+  top: 7em;
+  width: 100%;
+}
