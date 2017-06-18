@@ -17,3 +17,12 @@
   top: 7em;
   width: 100%;
 }
+
+@media screen and (max-width: 633px) {
+  .header-image {
+    background-image: url('../../../assets/images/home-background.png');
+    height: 250px;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+  }
+}
