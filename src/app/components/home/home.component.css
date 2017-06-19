@@ -10,10 +10,6 @@
   width: 75%;
 }
 
-.margin {
-  margin: 10px !important;
-}
-
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -78,6 +74,18 @@ blockquote {
 @media all and (min-width: 800px) {
   .card {
     flex: 2 0;
+  }
+
+  .margin-card md-card:first-child {
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .margin-card md-card:last-child {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
