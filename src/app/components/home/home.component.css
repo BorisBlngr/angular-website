@@ -70,6 +70,18 @@ blockquote {
   font-size: x-large;
 }
 
+.mat-card-title {
+  font-size: 190%;
+}
+
+.mat-card-subtitle {
+  font-size: 140%;
+}
+
+.mat-card-content {
+  font-size: 140%;
+}
+
 @media all and (min-width: 600px) {
   .card {
     flex: 1 auto;
