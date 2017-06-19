@@ -39,21 +39,9 @@ export class MenuItem {
     location: '/tarif',
     links: []
   }, {
-    name: 'link2',
-    location: '/link1',
-    links: [
-      {
-        name: 'link2-1',
-        location: '/link1',
-      },
-      {
-        name: 'link2-2',
-        location: '/link1',
-      },
-      {
-        name: 'link2-3',
-        location: '/link1',
-      }]
+    name: 'presentation',
+    location: '/presentation',
+    links: []
   }, {
     name: 'link2',
     location: '/link1',
