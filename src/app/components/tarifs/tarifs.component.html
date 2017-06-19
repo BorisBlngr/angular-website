@@ -10,9 +10,10 @@
         <ngx-datatable
           [rows]="tarif1_rows"
           [columns]="tarif1_columns"
-          [scrollbarV]="false"
           [scrollbarH]="true"
-        >
+          [headerHeight]="40"
+          [footerHeight]="0"
+          [rowHeight]="40">
         </ngx-datatable>
       </div>
     </md-card-content>
@@ -28,8 +29,10 @@
         <ngx-datatable
           [rows]="tarif2_rows"
           [columns]="tarif2_columns"
-          [scrollbarV]="false"
-          [scrollbarH]="true">
+          [scrollbarH]="true"
+          [headerHeight]="40"
+          [footerHeight]="0"
+          [rowHeight]="40">
         </ngx-datatable>
       </div>
     </md-card-content>
