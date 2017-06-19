@@ -21,6 +21,23 @@ md-toolbar a {
   margin-right: 1em;
 }
 
+.itemMenuToolbar {
+  text-transform: uppercase;
+}
+
+md-sidenav h3 {
+  text-transform: uppercase;
+}
+
+.mat-line:first-letter {
+  text-transform: uppercase;
+
+}
+
+.mat-menu-item span {
+  text-transform: capitalize;
+}
+
 .icon {
   padding: 0 14px;
 }
@@ -95,6 +112,7 @@ md-toolbar a {
     display: inline-block;
   }
 }
+
 
 
 
