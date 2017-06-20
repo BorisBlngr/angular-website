@@ -1,7 +1,7 @@
-.header {
+.footer {
 }
 
-.header-image {
+.footer-image {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('../../../assets/images/home-background.png');
   height: 250px;
   background-attachment: fixed;
@@ -10,7 +10,7 @@
   background-size: cover;
 }
 
-.header-title {
+.footer-title {
   color: whitesmoke;
   position: absolute;
   text-align: center;
@@ -19,7 +19,7 @@
 }
 
 @media screen and (max-width: 633px) {
-  .header-image {
+  .footer-image {
     background-image: url('../../../assets/images/home-background.png');
     height: 250px;
     background-attachment: scroll;
