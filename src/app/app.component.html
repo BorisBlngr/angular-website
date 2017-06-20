@@ -5,13 +5,13 @@
     <span *ngIf="link1.links.length > 0; else elseBlock">
       <a [mdMenuTriggerFor]=menu> {{link1.name}} </a>
       <md-menu #menu="mdMenu">
-        <button *ngFor="let link2 of link1.links" [routerLink]="link2.location" md-menu-item>
+        <a *ngFor="let link2 of link1.links" href="{{link2.location}}#{{link2.fragment}}" md-menu-item>
           <md-icon>chevron_right</md-icon>
           <span>{{link2.name}}</span>
-        </button>
+        </a>
       </md-menu>
     </span>
-      <ng-template #elseBlock><a [routerLink]="link1.location"> {{link1.name}} </a></ng-template>
+      <ng-template #elseBlock><a [routerLink]="link1.location" fragment=""> {{link1.name}} </a></ng-template>
     </div>
     <span class="spacer"></span>
     <button md-button class="fab" (click)="sidenav.toggle()">
@@ -25,9 +25,9 @@
       <md-list *ngFor="let link1 of menuItem">
         <span *ngIf="link1.links.length > 0; else elseBlock">
         <h3 md-subheader>{{link1.name}}</h3>
-        <md-list-item *ngFor="let link2 of link1.links" [routerLink]="link2.location">
+        <md-list-item *ngFor="let link2 of link1.links">
           <md-icon md-list-icon>chevron_right</md-icon>
-          <h4 md-line>{{link2.name}}</h4>
+          <a md-line href="{{link2.location}}#{{link2.fragment}}">{{link2.name}}</a>
         </md-list-item>
         <md-divider *ngIf="last"></md-divider>
         </span>

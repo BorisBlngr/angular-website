@@ -21,14 +21,17 @@ export class MenuItem {
       {
         name: 'link2-1',
         location: '/link1',
+        fragment: '',
       },
       {
         name: 'link2-2',
         location: '/link1',
+        fragment: '',
       },
       {
         name: 'link2-3',
         location: '/link1',
+        fragment: '',
       }]
   }, {
     name: 'Home',
@@ -37,10 +40,12 @@ export class MenuItem {
   }, {
     name: 'Tarif',
     location: '/tarif',
+    fragment: '',
     links: []
   }, {
     name: 'presentation',
     location: '/presentation',
+    fragment: '',
     links: []
   }, {
     name: 'link2',
@@ -49,30 +54,36 @@ export class MenuItem {
       {
         name: 'link2-1',
         location: '/link1',
+        fragment: '',
       },
       {
         name: 'link2-2',
         location: '/link1',
+        fragment: '',
       },
       {
         name: 'link2-3',
         location: '/link1',
+        fragment: '',
       }]
   }, {
-    name: 'link2',
-    location: '/link1',
+    name: 'presentation',
+    location: '/presentation',
     links: [
       {
         name: 'link2-1',
-        location: '/link1',
+        location: '/presentation',
+        fragment: 'section1',
       },
       {
         name: 'link2-2',
-        location: '/link1',
+        location: 'presentation',
+        fragment: 'section2',
       },
       {
         name: 'link2-3',
-        location: '/link1',
+        location: 'presentation',
+        fragment: 'section3',
       }]
   }, {
     name: 'link3',

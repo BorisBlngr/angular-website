@@ -2,7 +2,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
-import { AppRoutingModule } from './app-routing.module';
+import {AppRoutingModule} from './app-routing.module';
 
 // Material imports
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -15,18 +15,19 @@ import {MdMenuModule} from '@angular/material';
 import {MdCardModule} from '@angular/material';
 
 // Google Map
-import { AgmCoreModule } from 'angular2-google-maps/core';
+import {AgmCoreModule} from 'angular2-google-maps/core';
 
 // Table
-import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import {NgxDatatableModule} from '@swimlane/ngx-datatable';
 
 import {AppComponent} from './app.component';
-import { HomeComponent } from './components/home/home.component';
-import { MapComponent } from './components/map/map.component';
-import { TarifsComponent } from './components/tarifs/tarifs.component';
-import { HeaderBackgroundComponent } from './components/header-background/header-background.component';
-import { PresentationComponent } from './components/presentation/presentation.component';
-import { FooterBackgroundComponent } from './components/footer-background/footer-background.component';
+import {HomeComponent} from './components/home/home.component';
+import {MapComponent} from './components/map/map.component';
+import {TarifsComponent} from './components/tarifs/tarifs.component';
+import {HeaderBackgroundComponent} from './components/header-background/header-background.component';
+import {PresentationComponent} from './components/presentation/presentation.component';
+import {FooterBackgroundComponent} from './components/footer-background/footer-background.component';
+import {NotFoundComponent} from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { FooterBackgroundComponent } from './components/footer-background/footer
     TarifsComponent,
     HeaderBackgroundComponent,
     PresentationComponent,
-    FooterBackgroundComponent
+    FooterBackgroundComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
