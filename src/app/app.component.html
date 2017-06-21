@@ -2,15 +2,13 @@
   <!-- Nav Bar : Toolbar -->
   <md-toolbar color="primary">
     <div class="itemMenuToolbar" *ngFor="let link1 of menuItem">
-    <span *ngIf="link1.links.length > 0; else elseBlock">
-      <a [mdMenuTriggerFor]=menu> {{link1.name}} </a>
+      <a *ngIf="link1.links.length > 0; else elseBlock" [mdMenuTriggerFor]=menu> {{link1.name}} </a>
       <md-menu #menu="mdMenu">
         <a *ngFor="let link2 of link1.links" href="{{link2.location}}#{{link2.fragment}}" md-menu-item>
           <md-icon>chevron_right</md-icon>
           <span>{{link2.name}}</span>
         </a>
       </md-menu>
-    </span>
       <ng-template #elseBlock><a [routerLink]="link1.location" fragment=""> {{link1.name}} </a></ng-template>
     </div>
     <span class="spacer"></span>

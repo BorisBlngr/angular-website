@@ -13,9 +13,9 @@ export class TarifsComponent implements OnInit {
   ];
   tarif1_columns = [
     {prop: 'name'},
-    {name: '30m', prop: 'time1' },
+    {name: '30m', prop: 'time1'},
     {name: '1h', prop: 'time2'},
-    {name: '1h30', prop: 'time3' }
+    {name: '1h30', prop: 'time3'}
   ];
 
   tarif2_rows = [
