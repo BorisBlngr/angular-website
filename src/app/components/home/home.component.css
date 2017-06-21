@@ -2,12 +2,16 @@
   flex: 1 100%;
 }
 
+.intro {
+  background-color: #f2f2f2;
+}
+
 .all {
-  width: 100%;
+  max-width: 1356px !important;
 }
 
 .all-75 {
-  width: 75%;
+  max-width: 75%
 }
 
 .card-no-border {
@@ -125,6 +129,7 @@ blockquote {
 @media all and (min-width: 800px) {
   .card {
     flex: 2 0;
+    max-width: 630px;
   }
 
   .flex1 {
