@@ -3,8 +3,9 @@
 }
 
 a {
-  color: teal;
   cursor: pointer;
+  color: inherit;
+  text-decoration: inherit;
 }
 
 /* Nav bar : Toolbar */

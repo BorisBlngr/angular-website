@@ -22,7 +22,7 @@
     <div class="scrolling-content">
       <md-list *ngFor="let link1 of menuItem">
         <span *ngIf="link1.links.length > 0; else elseBlock">
-        <h3 md-subheader>{{link1.name}}</h3>
+          <h3 md-subheader><a [routerLink]="link1.location">{{link1.name}}</a></h3>
         <md-list-item *ngFor="let link2 of link1.links">
           <md-icon md-list-icon>chevron_right</md-icon>
           <a md-line href="{{link2.location}}#{{link2.fragment}}">{{link2.name}}</a>
@@ -30,7 +30,7 @@
         <md-divider *ngIf="last"></md-divider>
         </span>
 
-        <ng-template #elseBlock><h3 md-subheader [routerLink]="link1.location"> {{link1.name}} </h3></ng-template>
+        <ng-template #elseBlock><h3 md-subheader [routerLink]="link1.location"><a>{{link1.name}}</a></h3></ng-template>
 
       </md-list>
     </div>
