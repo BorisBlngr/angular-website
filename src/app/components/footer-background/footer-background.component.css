@@ -1,0 +1,28 @@
+.footer {
+}
+
+.footer-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('../../../assets/images/home-background.png');
+  height: 250px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-title {
+  color: whitesmoke;
+  position: absolute;
+  text-align: center;
+  top: 7em;
+  width: 100%;
+}
+
+@media screen and (max-width: 633px) {
+  .footer-image {
+    background-image: url('../../../assets/images/home-background.png');
+    height: 250px;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+  }
+}
