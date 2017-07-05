@@ -1,0 +1,134 @@
+. {
+  color: hsl(0, 0%, 10%);
+}
+
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* Nav bar : Toolbar */
+md-toolbar {
+  width: 100vw !important;
+  background: hsl(0, 0%, 10%) !important;
+}
+
+md-toolbar a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.itemMenuToolbar {
+  margin-right: 1em;
+}
+
+.itemMenuToolbar {
+  text-transform: uppercase;
+}
+
+md-sidenav h3 {
+  text-transform: uppercase;
+}
+
+.mat-line:first-letter {
+  text-transform: uppercase;
+
+}
+
+.mat-menu-item span {
+  text-transform: capitalize;
+}
+
+.icon {
+  padding: 0 14px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+/* Side bar */
+.sidenav-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.sidenav-container md-sidenav {
+  width: 250px;
+}
+
+.sidenav-container .mat-sidenav-content,
+.sidenav-container md-sidenav {
+  display: flex;
+  overflow: visible;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.scrolling-content {
+  overflow: auto;
+  width: 100%;
+}
+
+.footer {
+  background-color: hsl(0, 0%, 10%);
+  color: whitesmoke;
+  text-align: center;
+}
+
+.footer-info div {
+  margin: 5px;
+}
+
+.fa {
+  margin: 7px;
+  font-size: 24px;
+  color: hsl(0, 0%, 70%);;
+}
+
+/*FOOTER*/
+.mat-card-title {
+  font-size: 190%;
+}
+
+.mat-card-subtitle {
+  font-size: 140%;
+}
+
+.mat-card-content {
+  font-size: 140%;
+}
+
+@media screen and (min-width: 633px) {
+  .itemMenuToolbar {
+    display: inline-block;
+  }
+
+  .fab {
+    display: none !important;
+  }
+
+  /*for parallax effect*/
+  .mat-sidenav-container {
+    display: initial;
+  }
+}
+
+/* For Mobile Phones */
+@media screen and (max-width: 633px) {
+  .itemMenuToolbar {
+    display: none;
+  }
+
+  .fab {
+    display: inline-block;
+  }
+}
+
+
+
+
+
+
+
+

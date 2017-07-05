@@ -1,0 +1,65 @@
+.mat-card-title {
+  font-size: 190%;
+}
+
+.mat-card-subtitle {
+  font-size: 140%;
+}
+
+.mat-card-content {
+  font-size: 140%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+md-card-content {
+  margin: 10px;
+}
+
+.card {
+  flex: 1 100%;
+}
+
+.card-no-border {
+  box-shadow: none;
+}
+
+.card-image {
+  max-width: 100%;
+}
+
+.card-image img {
+  max-width: 100%;
+  margin: auto;
+}
+
+@media all and (min-width: 600px) {
+  .card {
+    flex: 1 auto;
+  }
+
+  .column {
+    float: left;
+  }
+
+  .card-image img {
+    max-width: 100%;
+  }
+
+}
+
+@media all and (min-width: 800px) {
+  .card {
+    flex: 2 0;
+  }
+
+  .card-image {
+    max-width: 350px;
+  }
+}
+
+
