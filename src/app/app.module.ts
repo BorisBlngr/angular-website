@@ -41,7 +41,7 @@ import {NotFoundComponent} from './components/not-found/not-found.component';
     NotFoundComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'angular-website'}),
     BrowserAnimationsModule,
     FormsModule,
     HttpModule,
